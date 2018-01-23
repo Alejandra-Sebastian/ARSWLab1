@@ -14,9 +14,12 @@ import java.util.List;
 public class Main {
     
     public static void main(String a[]){
-        HostBlackListsValidator hblv=new HostBlackListsValidator();
-        List<Integer> blackListOcurrences=hblv.checkHost("200.24.34.55",0);
-        System.out.println("The host was found in the following blacklists:"+blackListOcurrences);
+//        HostBlackListsValidator hblv=new HostBlackListsValidator();
+//        List<Integer> blackListOcurrences=hblv.checkHost("200.24.34.55",0);
+        MyThread th = new MyThread("212.24.24.55", 6);
+        th.run();
+        
+//        System.out.println("The host was found in the following blacklists:"+blackListOcurrences);
         
     }
     
